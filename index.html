@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Steve Cresswell's Portfolio Page</title>
+        <link rel="stylesheet" type="text/css" href="./Resources/reset.css">
         <link rel="stylesheet" type="text/css" href="./Resources/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -12,26 +16,29 @@
             <h1>Steven Cresswell</h1>
             <nav>
                 <ul>
-                    <li><a href="#aboutme"></a>About Me</li>
-                    <li<a href="./contacts.html">Contact</li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="./contacts.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <h2 id="aboutme">About Me</h2>
-            <p>Hi! I'm Steven Cresswell and, after being fascinated with the field for years, I'm at the start of my career in coding. With a background in Commercial Archaeology and Secondary Science Education, I'm bringing a variety of experiences to the field.</p>
-            <p>Currently, I'm focussed on exploring a career as a front-end developer and have been developing the relevant skills to that end.</p>
-            <p>In my spare time I'm an avid gamer, enjoyer of nature, father of twins, and I help my wife run her ecological consultancy business. Occasionally, I sleep!</p>
-
-            <img src="" alt="Image of wesbite author.">
+            <div id="aboutme">
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Steven Cresswell and, after being fascinated with the field for years, I'm at the start of my career in coding. With a background in Commercial Archaeology and Secondary Science Education, I'm bringing a variety of experiences to the field.</p>
+                    <p>Currently, I'm focussed on exploring a career as a front-end developer and have been developing the relevant skills to that end.</p>
+                    <p>In my spare time I'm an avid gamer, enjoyer of nature, father of twins, and I help my wife run her ecological consultancy business. Occasionally, I sleep!</p>
+                </div>
+                <img src="./Resources/Images/Placeholder headshot.jpg" alt="Image of wesbite author.">
+            </div>
 
             <h2>Projects</h2>
-            <ul>
-                <li>Cresswell Wildlife Consultancy Company Website</li>
-                <li>Javascript Organism Factory</li>
-                <li>Archaeological Context ID Training</li>
-                <li>Blackjack!</li>
+            <ul id="project-list">
+                <li id="project1">Cresswell Wildlife Consultancy Company Website</li>
+                <li id="project2">Javascript Organism Factory</li>
+                <li id="project3">Archaeological Context ID Training</li>
+                <li id="project4">Blackjack!</li>
             </ul>
 
             <h2>Skills</h2>
