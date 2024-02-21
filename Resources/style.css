@@ -1,7 +1,7 @@
 body {
     margin-top: 5%;
     margin-left: 10%;
-    margin-right: 25%;
+    margin-right: 10%;
 }
 
 h1 {
@@ -9,6 +9,7 @@ h1 {
     font-family: "Playfair Display", serif;
     font-size: 3rem;
     margin-bottom: 4rem;
+    font-weight: bold;
 }
 
 h2 {
@@ -31,7 +32,7 @@ p {
 header {
     display: inline-flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     align-content: center;
 }
 
@@ -70,12 +71,24 @@ nav a:active {
     width: 50%;
 }
 
+#aboutme a {
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+#aboutme a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 #aboutme img {
     height: 22rem;
     width: 22rem;
     border-radius: 50%;
     overflow: hidden;
     align-self: center;
+    margin-right: 10%;
 }
 
 #project-list {
@@ -84,8 +97,65 @@ nav a:active {
     font-size: 1.5rem;
     line-height: 5rem;
     list-style-image: url(./Images/pointing-right-finger-svgrepo-com.svg);
+    padding-left: 1.5rem;
 }
 
 #project-list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mini-image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    width: 70%;
+}
+
+#mini-image-container div {
+    width: 8rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#mini-image-container div p {
+    position: relative;
+    right: 8rem;
+    transition: right 1s linear;
+}
+
+#mini-image-container div:hover p {
+    right: 0;
+}
+
+#mini-image-container div img {
+    position: relative;
+    transition: width 1s linear, height 1s linear, transform 1s ease-out;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+
+#mini-image-container div:hover img {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-100%);
+}
+
+
+footer {
+    margin-top: 12rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer p:hover {
     cursor: pointer;
 }
