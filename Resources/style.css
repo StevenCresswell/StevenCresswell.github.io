@@ -91,7 +91,7 @@ nav a:active {
     margin-right: 10%;
 }
 
-#project-list {
+.project-list {
     color: rgb(114, 114, 114);
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
@@ -100,9 +100,54 @@ nav a:active {
     padding-left: 1.5rem;
 }
 
-#project-list li:hover {
+.project-list li:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+#project-info-one {
+    width: 60%;
+    list-style-image: none;
+    border: solid 1px rgb(114, 114, 114);
+    text-align: center;
+    display: none;
+}
+
+#project-info-one:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#project-info-one img {
+    width: 95%;
+    margin-top: 2%;
+}
+
+#project-info-two {
+    width: 60%;
+    list-style-image: none;
+    border: solid 1px rgb(114, 114, 114);
+    text-align: center;
+    display: none;
+}
+
+#project-info-two:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#project-info-two img {
+    width: 95%;
+    margin-top: 2%;
+}
+
+.project-list button {
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    background-color: rgb(114, 114, 114);
+    box-shadow: 2px;
 }
 
 #mini-image-container {
@@ -158,4 +203,10 @@ footer p {
 
 footer p:hover {
     cursor: pointer;
+}
+
+#gnomedpic {
+    display: none;
+    position: relative;
+    left: 42.5%;
 }
