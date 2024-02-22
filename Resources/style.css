@@ -12,6 +12,7 @@ h1 {
     font-weight: bold;
 }
 
+
 h2 {
     color: rgb(114, 114, 114);
     font-family: "Playfair Display", serif;
@@ -53,6 +54,7 @@ nav a {
     padding: 0.25rem;
 }
 
+
 nav a:hover {
     background-color: rgb(114, 114, 114);
     color: white;
@@ -63,7 +65,7 @@ nav a:active {
 }
 
 #aboutme {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -91,6 +93,7 @@ nav a:active {
     margin-right: 10%;
 }
 
+
 .project-list {
     color: rgb(114, 114, 114);
     font-family: "Open Sans", sans-serif;
@@ -105,7 +108,7 @@ nav a:active {
     text-decoration: underline;
 }
 
-#project-info-one {
+#project-info-one, #project-info-two {
     width: 60%;
     list-style-image: none;
     border: solid 1px rgb(114, 114, 114);
@@ -113,30 +116,12 @@ nav a:active {
     display: none;
 }
 
-#project-info-one:hover {
+#project-info-one:hover, #project-info-two:hover {
     text-decoration: none;
     cursor: default;
 }
 
-#project-info-one img {
-    width: 95%;
-    margin-top: 2%;
-}
-
-#project-info-two {
-    width: 60%;
-    list-style-image: none;
-    border: solid 1px rgb(114, 114, 114);
-    text-align: center;
-    display: none;
-}
-
-#project-info-two:hover {
-    text-decoration: none;
-    cursor: default;
-}
-
-#project-info-two img {
+#project-info-one img, #project-info-two img {
     width: 95%;
     margin-top: 2%;
 }
@@ -156,6 +141,7 @@ nav a:active {
     margin-top: 4rem;
     width: 70%;
 }
+
 
 #mini-image-container div {
     width: 8rem;
@@ -195,6 +181,9 @@ nav a:active {
 footer {
     margin-top: 12rem;
     text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 }
 
 footer p {
@@ -207,6 +196,110 @@ footer p:hover {
 
 #gnomedpic {
     display: none;
-    position: relative;
-    left: 42.5%;
+    height: 20%;
+    width: 20%;
+    align-self: center;
 }
+
+@media only screen and (max-width: 770px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    #aboutme .text-container {
+        width: 60%;
+    }
+
+    #aboutme img {
+        height: 14rem;
+        width: 14rem;
+        margin-right: 5%;
+    }
+
+    #project-info-one, #project-info-two {
+        width: 90%;
+    }
+
+    #mini-image-container {
+        width: 90%;
+    }
+
+    #mini-image-container div p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    header {
+        width: 100%;
+        align-content: center;
+    }
+
+    nav ul {
+        margin-top: 0.5rem;
+    }
+
+    nav a {
+        margin: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    #aboutme {
+        flex-direction: column;
+    }
+    
+    #aboutme .text-container {
+        width: 100%;
+    }
+
+    #aboutme img {
+        margin-right: 0;
+        left: 50%;
+    }
+
+    .project-list {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    #mini-image-container {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #mini-image-container div {
+        width: 7rem;
+    }
+}
+
