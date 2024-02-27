@@ -39,6 +39,7 @@ header {
 
 nav ul{
     display: inline-flex;
+    flex-wrap: wrap;
     margin-top: 1.75rem;
 }
 
@@ -137,6 +138,7 @@ nav a:active {
 
 #mini-image-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4rem;
     width: 70%;
@@ -267,10 +269,13 @@ footer p:hover {
 
     nav ul {
         margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.5rem;
     }
 
     nav a {
-        margin: 0.5rem;
+        margin: 1rem 1rem;
+        padding: 0.5rem;
         font-size: 0.8rem;
     }
 
