@@ -1,7 +1,11 @@
 const projectOne = document.getElementById("project1")
 const projectTwo = document.getElementById("project2")
+const projectThree = document.getElementById("project3")
+const projectFour = document.getElementById("project4")
 const closeButtonOne = document.getElementById("close-button-one")
 const closeButtonTwo = document.getElementById("close-button-two")
+const closeButtonThree = document.getElementById("close-button-three")
+const closeButtonFour = document.getElementById("close-button-four")
 
 const openProject = (event) => {
     if (event.target === projectOne) {
@@ -10,6 +14,12 @@ const openProject = (event) => {
     } else if (event.target === projectTwo) {
         document.getElementById("project-info-two").style.display = "block"
         projectTwo.style.listStyleImage = "url(Resources/Images/pointing-down-finger-svgrepo-com.svg)"
+    } else if (event.target === projectThree) {
+        document.getElementById("project-info-three").style.display = "block"
+        projectThree.style.listStyleImage = "url(Resources/Images/pointing-down-finger-svgrepo-com.svg)"
+    } else if (event.target === projectFour) {
+        document.getElementById("project-info-four").style.display = "block"
+        projectFour.style.listStyleImage = "url(Resources/Images/pointing-down-finger-svgrepo-com.svg)"
     }
 }
 
@@ -20,6 +30,12 @@ const closeProject = (event) => {
     } else if (event.target === closeButtonTwo) {
         document.getElementById("project-info-two").style.display = "none"
         projectTwo.style.listStyleImage = "url(Resources/Images/pointing-right-finger-svgrepo-com.svg)"
+    } else if (event.target === closeButtonThree) {
+        document.getElementById("project-info-three").style.display = "none"
+        projectThree.style.listStyleImage = "url(Resources/Images/pointing-right-finger-svgrepo-com.svg)"
+    } else if (event.target === closeButtonFour) {
+        document.getElementById("project-info-four").style.display = "none"
+        projectFour.style.listStyleImage = "url(Resources/Images/pointing-right-finger-svgrepo-com.svg)"
     }
 }
 
@@ -27,10 +43,17 @@ projectOne.onclick = openProject
 
 projectTwo.onclick = openProject
 
+projectThree.onclick = openProject
+
+projectFour.onclick = openProject
+
 closeButtonOne.onclick = closeProject
 
 closeButtonTwo.onclick = closeProject
 
+closeButtonThree.onclick = closeProject
+
+closeButtonFour.onclick = closeProject
 
 const gnomedAudio = new Audio("Resources/Sound/gnome-sound-effect.mp3")
 const gnomed = document.getElementById("gnomed")

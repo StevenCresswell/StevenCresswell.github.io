@@ -109,7 +109,7 @@ nav a:active {
     text-decoration: underline;
 }
 
-#project-info-one, #project-info-two {
+#project-info-one, #project-info-two, #project-info-three, #project-info-four {
     width: 60%;
     list-style-image: none;
     border: solid 1px rgb(114, 114, 114);
@@ -117,12 +117,12 @@ nav a:active {
     display: none;
 }
 
-#project-info-one:hover, #project-info-two:hover {
+#project-info-one:hover, #project-info-two:hover, #project-info-three:hover, #project-info-four:hover {
     text-decoration: none;
     cursor: default;
 }
 
-#project-info-one img, #project-info-two img {
+#project-info-one img, #project-info-two img, #project-info-three img, #project-info-four img {
     width: 95%;
     margin-top: 2%;
 }
